@@ -87,23 +87,7 @@ summary = refine_chain.run(text)
 - Best for generating a more detailed summary.
 
 ### 5. Exploring Different Prompt Templates
-Various prompt templates were used for improved summarization:
-
-#### **Basic Summarization Prompt**
-```python
-from langchain.prompts import PromptTemplate
-
-template = PromptTemplate.from_template("Summarize the following text:\n{text}")
-prompt = template.format(text="Your input text goes here")
-```
-- Directly asks the model to summarize the text.
-
-#### **Concise Summary Prompt**
-```python
-concise_prompt = PromptTemplate.from_template("Provide a short summary:\n{text}")
-prompt = concise_prompt.format(text="Your input text goes here")
-```
-- Used to generate a brief summary.
+Various prompt templates were used for improved summarization
 
 ## Dependencies
 The required dependencies can be installed using:
